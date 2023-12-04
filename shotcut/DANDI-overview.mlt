@@ -1,0 +1,885 @@
+<?xml version="1.0" standalone="no"?>
+<mlt LC_NUMERIC="C" version="7.22.0" title="Shotcut version 23.11.29" producer="main_bin">
+  <profile description="automatic" width="3840" height="2400" progressive="1" sample_aspect_num="1" sample_aspect_den="1" display_aspect_num="8" display_aspect_den="5" frame_rate_num="25" frame_rate_den="1" colorspace="709"/>
+  <producer id="producer0" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/Downloads/logo_blue_big_with_video_margins.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">1</property>
+    <property name="meta.media.width">3824</property>
+    <property name="meta.media.height">2400</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2023-11-06T17:34:03</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:caption">logo_blue_big_with_video_margins.jpg</property>
+    <property name="shotcut:hash">618f1177f3dd242dd5b11793466d25d5</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+  </producer>
+  <producer id="producer1" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/devel/dandi-artwork/pics/dandi-logo-square.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">2</property>
+    <property name="meta.media.width">500</property>
+    <property name="meta.media.height">500</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2023-11-06T17:41:21</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:caption">dandi-logo-square.png</property>
+    <property name="shotcut:hash">c0be4852d41af0b980323129b4a5b939</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+  </producer>
+  <playlist id="main_bin">
+    <property name="xml_retain">1</property>
+    <entry producer="producer0" in="00:00:00.000" out="00:00:03.960"/>
+    <entry producer="producer1" in="00:00:00.000" out="00:00:03.960"/>
+  </playlist>
+  <producer id="black" in="00:00:00.000" out="01:09:27.360">
+    <property name="length">01:09:27.400</property>
+    <property name="eof">pause</property>
+    <property name="resource">0</property>
+    <property name="aspect_ratio">1</property>
+    <property name="mlt_service">color</property>
+    <property name="mlt_image_format">rgba</property>
+    <property name="set.test_audio">0</property>
+  </producer>
+  <playlist id="background">
+    <entry producer="black" in="00:00:00.000" out="01:09:27.360"/>
+  </playlist>
+  <chain id="chain0" title="Shotcut version 23.09.29" out="01:12:37.880">
+    <property name="length">01:12:37.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/devel/con-tube/videos/2023-10-25-DANDI-1.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">audio</property>
+    <property name="meta.media.0.codec.sample_fmt">fltp</property>
+    <property name="meta.media.0.codec.sample_rate">32000</property>
+    <property name="meta.media.0.codec.channels">1</property>
+    <property name="meta.media.0.codec.name">aac</property>
+    <property name="meta.media.0.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">126250</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">AAC audio</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.media.1.stream.type">video</property>
+    <property name="meta.media.1.stream.frame_rate">25</property>
+    <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.width">3840</property>
+    <property name="meta.media.1.codec.height">2400</property>
+    <property name="meta.media.1.codec.rotate">0</property>
+    <property name="meta.media.1.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.colorspace">709</property>
+    <property name="meta.media.1.codec.name">h264</property>
+    <property name="meta.media.1.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.1.codec.bit_rate">804230</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">H.264/AVC video</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.1.stream.encoder.markup">AVC Coding</property>
+    <property name="meta.attr.major_brand.markup">mp42</property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">isommp42</property>
+    <property name="meta.attr.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">3840</property>
+    <property name="meta.media.height">2400</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="creation_time">2023-10-25T19:44:07</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:hash">bb324974890bc04deb8d6d0fd8b92766</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">2023-10-25-DANDI-1.mp4</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain1" out="01:12:37.880">
+    <property name="length">01:12:37.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/devel/con-tube/videos/2023-10-25-DANDI-1.mp4</property>
+    <property name="mlt_service">avformat</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">audio</property>
+    <property name="meta.media.0.codec.sample_fmt">fltp</property>
+    <property name="meta.media.0.codec.sample_rate">32000</property>
+    <property name="meta.media.0.codec.channels">1</property>
+    <property name="meta.media.0.codec.name">aac</property>
+    <property name="meta.media.0.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">126250</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">AAC audio</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.media.1.stream.type">video</property>
+    <property name="meta.media.1.stream.frame_rate">25</property>
+    <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.width">3840</property>
+    <property name="meta.media.1.codec.height">2400</property>
+    <property name="meta.media.1.codec.rotate">0</property>
+    <property name="meta.media.1.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.colorspace">709</property>
+    <property name="meta.media.1.codec.name">h264</property>
+    <property name="meta.media.1.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.1.codec.bit_rate">804230</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">H.264/AVC video</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.1.stream.encoder.markup">AVC Coding</property>
+    <property name="meta.attr.major_brand.markup">mp42</property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">isommp42</property>
+    <property name="meta.attr.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">3840</property>
+    <property name="meta.media.height">2400</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="video_delay">0</property>
+    <property name="shotcut:hash">bb324974890bc04deb8d6d0fd8b92766</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:caption">2023-10-25-DANDI-1.mp4</property>
+    <property name="shotcut:producer">avformat</property>
+    <property name="xml">was here</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+  </chain>
+  <chain id="chain2" title="Shotcut version 23.09.29" out="01:12:37.880">
+    <property name="length">01:12:37.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/devel/con-tube/videos/2023-10-25-DANDI-1.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">audio</property>
+    <property name="meta.media.0.codec.sample_fmt">fltp</property>
+    <property name="meta.media.0.codec.sample_rate">32000</property>
+    <property name="meta.media.0.codec.channels">1</property>
+    <property name="meta.media.0.codec.name">aac</property>
+    <property name="meta.media.0.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">126250</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">AAC audio</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.media.1.stream.type">video</property>
+    <property name="meta.media.1.stream.frame_rate">25</property>
+    <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.width">3840</property>
+    <property name="meta.media.1.codec.height">2400</property>
+    <property name="meta.media.1.codec.rotate">0</property>
+    <property name="meta.media.1.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.colorspace">709</property>
+    <property name="meta.media.1.codec.name">h264</property>
+    <property name="meta.media.1.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.1.codec.bit_rate">804230</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">H.264/AVC video</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.1.stream.encoder.markup">AVC Coding</property>
+    <property name="meta.attr.major_brand.markup">mp42</property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">isommp42</property>
+    <property name="meta.attr.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">3840</property>
+    <property name="meta.media.height">2400</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="creation_time">2023-10-25T19:44:07</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:hash">bb324974890bc04deb8d6d0fd8b92766</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">2023-10-25-DANDI-1.mp4</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain3" title="Shotcut version 23.09.29" out="01:12:37.880">
+    <property name="length">01:12:37.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/devel/con-tube/videos/2023-10-25-DANDI-1.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">audio</property>
+    <property name="meta.media.0.codec.sample_fmt">fltp</property>
+    <property name="meta.media.0.codec.sample_rate">32000</property>
+    <property name="meta.media.0.codec.channels">1</property>
+    <property name="meta.media.0.codec.name">aac</property>
+    <property name="meta.media.0.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">126250</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">AAC audio</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.media.1.stream.type">video</property>
+    <property name="meta.media.1.stream.frame_rate">25</property>
+    <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.width">3840</property>
+    <property name="meta.media.1.codec.height">2400</property>
+    <property name="meta.media.1.codec.rotate">0</property>
+    <property name="meta.media.1.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.colorspace">709</property>
+    <property name="meta.media.1.codec.name">h264</property>
+    <property name="meta.media.1.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.1.codec.bit_rate">804230</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">H.264/AVC video</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.1.stream.encoder.markup">AVC Coding</property>
+    <property name="meta.attr.major_brand.markup">mp42</property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">isommp42</property>
+    <property name="meta.attr.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">3840</property>
+    <property name="meta.media.height">2400</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="creation_time">2023-10-25T19:44:07</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:hash">bb324974890bc04deb8d6d0fd8b92766</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">2023-10-25-DANDI-1.mp4</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="xml">was here</property>
+  </chain>
+  <tractor id="tractor0" in="00:00:00.000" out="00:00:02.040">
+    <property name="shotcut:transition">lumaMix</property>
+    <track producer="chain2" in="00:04:47.000" out="00:04:49.040"/>
+    <track producer="chain3" in="00:05:14.360" out="00:05:16.400"/>
+    <transition id="transition0" out="00:00:02.040">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="factory">loader</property>
+      <property name="mlt_service">luma</property>
+      <property name="alpha_over">1</property>
+      <property name="fix_background_alpha">1</property>
+    </transition>
+    <transition id="transition1" out="00:00:02.040">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="start">-1</property>
+      <property name="accepts_blanks">1</property>
+    </transition>
+  </tractor>
+  <chain id="chain4" title="Shotcut version 23.09.29" out="01:12:37.880">
+    <property name="length">01:12:37.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/devel/con-tube/videos/2023-10-25-DANDI-1.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">audio</property>
+    <property name="meta.media.0.codec.sample_fmt">fltp</property>
+    <property name="meta.media.0.codec.sample_rate">32000</property>
+    <property name="meta.media.0.codec.channels">1</property>
+    <property name="meta.media.0.codec.name">aac</property>
+    <property name="meta.media.0.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">126250</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">AAC audio</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.media.1.stream.type">video</property>
+    <property name="meta.media.1.stream.frame_rate">25</property>
+    <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.width">3840</property>
+    <property name="meta.media.1.codec.height">2400</property>
+    <property name="meta.media.1.codec.rotate">0</property>
+    <property name="meta.media.1.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.colorspace">709</property>
+    <property name="meta.media.1.codec.name">h264</property>
+    <property name="meta.media.1.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.1.codec.bit_rate">804230</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">H.264/AVC video</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.1.stream.encoder.markup">AVC Coding</property>
+    <property name="meta.attr.major_brand.markup">mp42</property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">isommp42</property>
+    <property name="meta.attr.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">3840</property>
+    <property name="meta.media.height">2400</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="creation_time">2023-10-25T19:44:07</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:hash">bb324974890bc04deb8d6d0fd8b92766</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">2023-10-25-DANDI-1.mp4</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain5" title="Shotcut version 23.09.29" out="01:12:37.880">
+    <property name="length">01:12:37.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/devel/con-tube/videos/2023-10-25-DANDI-1.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">audio</property>
+    <property name="meta.media.0.codec.sample_fmt">fltp</property>
+    <property name="meta.media.0.codec.sample_rate">32000</property>
+    <property name="meta.media.0.codec.channels">1</property>
+    <property name="meta.media.0.codec.name">aac</property>
+    <property name="meta.media.0.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">126250</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">AAC audio</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.media.1.stream.type">video</property>
+    <property name="meta.media.1.stream.frame_rate">25</property>
+    <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.width">3840</property>
+    <property name="meta.media.1.codec.height">2400</property>
+    <property name="meta.media.1.codec.rotate">0</property>
+    <property name="meta.media.1.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.colorspace">709</property>
+    <property name="meta.media.1.codec.name">h264</property>
+    <property name="meta.media.1.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.1.codec.bit_rate">804230</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">H.264/AVC video</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.1.stream.encoder.markup">AVC Coding</property>
+    <property name="meta.attr.major_brand.markup">mp42</property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">isommp42</property>
+    <property name="meta.attr.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">3840</property>
+    <property name="meta.media.height">2400</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="creation_time">2023-10-25T19:44:07</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:hash">bb324974890bc04deb8d6d0fd8b92766</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">2023-10-25-DANDI-1.mp4</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain6" title="Shotcut version 23.09.29" out="01:12:37.880">
+    <property name="length">01:12:37.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/devel/con-tube/videos/2023-10-25-DANDI-1.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">audio</property>
+    <property name="meta.media.0.codec.sample_fmt">fltp</property>
+    <property name="meta.media.0.codec.sample_rate">32000</property>
+    <property name="meta.media.0.codec.channels">1</property>
+    <property name="meta.media.0.codec.name">aac</property>
+    <property name="meta.media.0.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">126250</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">AAC audio</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.media.1.stream.type">video</property>
+    <property name="meta.media.1.stream.frame_rate">25</property>
+    <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.width">3840</property>
+    <property name="meta.media.1.codec.height">2400</property>
+    <property name="meta.media.1.codec.rotate">0</property>
+    <property name="meta.media.1.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.colorspace">709</property>
+    <property name="meta.media.1.codec.name">h264</property>
+    <property name="meta.media.1.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.1.codec.bit_rate">804230</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">H.264/AVC video</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.1.stream.encoder.markup">AVC Coding</property>
+    <property name="meta.attr.major_brand.markup">mp42</property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">isommp42</property>
+    <property name="meta.attr.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">3840</property>
+    <property name="meta.media.height">2400</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="creation_time">2023-10-25T19:44:07</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:hash">bb324974890bc04deb8d6d0fd8b92766</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">2023-10-25-DANDI-1.mp4</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain7" title="Shotcut version 23.09.29" out="01:12:37.880">
+    <property name="length">01:12:37.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/devel/con-tube/videos/2023-10-25-DANDI-1.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">audio</property>
+    <property name="meta.media.0.codec.sample_fmt">fltp</property>
+    <property name="meta.media.0.codec.sample_rate">32000</property>
+    <property name="meta.media.0.codec.channels">1</property>
+    <property name="meta.media.0.codec.name">aac</property>
+    <property name="meta.media.0.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">126250</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">AAC audio</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.media.1.stream.type">video</property>
+    <property name="meta.media.1.stream.frame_rate">25</property>
+    <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.width">3840</property>
+    <property name="meta.media.1.codec.height">2400</property>
+    <property name="meta.media.1.codec.rotate">0</property>
+    <property name="meta.media.1.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.colorspace">709</property>
+    <property name="meta.media.1.codec.name">h264</property>
+    <property name="meta.media.1.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.1.codec.bit_rate">804230</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">H.264/AVC video</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.1.stream.encoder.markup">AVC Coding</property>
+    <property name="meta.attr.major_brand.markup">mp42</property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">isommp42</property>
+    <property name="meta.attr.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">3840</property>
+    <property name="meta.media.height">2400</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="creation_time">2023-10-25T19:44:07</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:hash">bb324974890bc04deb8d6d0fd8b92766</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">2023-10-25-DANDI-1.mp4</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="xml">was here</property>
+  </chain>
+  <chain id="chain8" title="Shotcut version 23.09.29" out="01:12:37.880">
+    <property name="length">01:12:37.920</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/devel/con-tube/videos/2023-10-25-DANDI-1.mp4</property>
+    <property name="mlt_service">avformat-novalidate</property>
+    <property name="meta.media.nb_streams">2</property>
+    <property name="meta.media.0.stream.type">audio</property>
+    <property name="meta.media.0.codec.sample_fmt">fltp</property>
+    <property name="meta.media.0.codec.sample_rate">32000</property>
+    <property name="meta.media.0.codec.channels">1</property>
+    <property name="meta.media.0.codec.name">aac</property>
+    <property name="meta.media.0.codec.long_name">AAC (Advanced Audio Coding)</property>
+    <property name="meta.media.0.codec.bit_rate">126250</property>
+    <property name="meta.attr.0.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.0.stream.handler_name.markup">AAC audio</property>
+    <property name="meta.attr.0.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.media.1.stream.type">video</property>
+    <property name="meta.media.1.stream.frame_rate">25</property>
+    <property name="meta.media.1.stream.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.width">3840</property>
+    <property name="meta.media.1.codec.height">2400</property>
+    <property name="meta.media.1.codec.rotate">0</property>
+    <property name="meta.media.1.codec.pix_fmt">yuv420p</property>
+    <property name="meta.media.1.codec.sample_aspect_ratio">0</property>
+    <property name="meta.media.1.codec.colorspace">709</property>
+    <property name="meta.media.1.codec.name">h264</property>
+    <property name="meta.media.1.codec.long_name">H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10</property>
+    <property name="meta.media.1.codec.bit_rate">804230</property>
+    <property name="meta.attr.1.stream.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="meta.attr.1.stream.handler_name.markup">H.264/AVC video</property>
+    <property name="meta.attr.1.stream.vendor_id.markup">[0][0][0][0]</property>
+    <property name="meta.attr.1.stream.encoder.markup">AVC Coding</property>
+    <property name="meta.attr.major_brand.markup">mp42</property>
+    <property name="meta.attr.minor_version.markup">0</property>
+    <property name="meta.attr.compatible_brands.markup">isommp42</property>
+    <property name="meta.attr.creation_time.markup">2023-10-25T19:44:07.000000Z</property>
+    <property name="seekable">1</property>
+    <property name="meta.media.sample_aspect_num">1</property>
+    <property name="meta.media.sample_aspect_den">1</property>
+    <property name="audio_index">0</property>
+    <property name="video_index">1</property>
+    <property name="vstream">0</property>
+    <property name="meta.media.frame_rate_num">25</property>
+    <property name="meta.media.frame_rate_den">1</property>
+    <property name="meta.media.colorspace">709</property>
+    <property name="meta.media.color_trc">2</property>
+    <property name="meta.media.has_b_frames">0</property>
+    <property name="meta.media.width">3840</property>
+    <property name="meta.media.height">2400</property>
+    <property name="meta.media.color_range">mpeg</property>
+    <property name="astream">0</property>
+    <property name="meta.media.top_field_first">0</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="creation_time">2023-10-25T19:44:07</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:hash">bb324974890bc04deb8d6d0fd8b92766</property>
+    <property name="ignore_points">0</property>
+    <property name="shotcut:caption">2023-10-25-DANDI-1.mp4</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="xml">was here</property>
+  </chain>
+  <playlist id="playlist0">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V1</property>
+    <entry producer="chain0" in="00:00:30.400" out="00:01:35.320"/>
+    <blank length="00:00:02.080"/>
+    <entry producer="chain1" in="00:01:48.960" out="00:04:46.960"/>
+    <blank length="00:00:00.040"/>
+    <entry producer="tractor0" in="00:00:00.000" out="00:00:02.040"/>
+    <entry producer="chain3" in="00:05:16.440" out="00:06:17.920"/>
+    <entry producer="chain4" in="00:06:24.040" out="00:08:43.440"/>
+    <entry producer="chain5" in="00:10:19.760" out="00:20:02.960"/>
+    <entry producer="chain6" in="00:20:12.320" out="00:21:36.320"/>
+    <entry producer="chain7" in="00:21:43.080" out="01:02:20.680"/>
+    <entry producer="chain8" in="01:02:23.600" out="01:12:37.880"/>
+  </playlist>
+  <producer id="producer2" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/Downloads/logo_blue_big_with_video_margins.jpg</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">1</property>
+    <property name="meta.media.width">3824</property>
+    <property name="meta.media.height">2400</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2023-11-06T17:34:03</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:caption">logo_blue_big_with_video_margins.jpg</property>
+    <property name="shotcut:hash">618f1177f3dd242dd5b11793466d25d5</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+    <property name="meta.shotcut.vui">1</property>
+    <property name="force_aspect_ratio">2</property>
+    <property name="shotcut_aspect_num">2</property>
+    <property name="shotcut_aspect_den">1</property>
+    <filter id="filter0" out="00:00:03.960">
+      <property name="background">color:#ffffff</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">0</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">-343.558 230.675 3185.47 1634.36 1</property>
+      <property name="transition.valign">top</property>
+      <property name="transition.halign">left</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+      <property name="transition.fix_rotate_x">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist1">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V2</property>
+    <entry producer="producer2" in="00:00:00.000" out="00:00:03.960"/>
+  </playlist>
+  <producer id="producer3" in="00:00:00.000" out="03:59:59.960">
+    <property name="length">04:00:00.000</property>
+    <property name="eof">pause</property>
+    <property name="resource">/home/austin/devel/dandi-artwork/pics/dandi-logo-square.png</property>
+    <property name="ttl">1</property>
+    <property name="aspect_ratio">1</property>
+    <property name="meta.media.progressive">1</property>
+    <property name="seekable">1</property>
+    <property name="format">2</property>
+    <property name="meta.media.width">500</property>
+    <property name="meta.media.height">500</property>
+    <property name="mlt_service">qimage</property>
+    <property name="creation_time">2023-11-06T17:41:21</property>
+    <property name="shotcut:skipConvert">0</property>
+    <property name="shotcut:caption">dandi-logo-square.png</property>
+    <property name="shotcut:hash">c0be4852d41af0b980323129b4a5b939</property>
+    <property name="ignore_points">0</property>
+    <property name="xml">was here</property>
+    <property name="meta.shotcut.vui">1</property>
+    <filter id="filter1" out="00:00:03.960">
+      <property name="background">color:#00000000</property>
+      <property name="mlt_service">affine</property>
+      <property name="shotcut:filter">affineSizePosition</property>
+      <property name="transition.fill">1</property>
+      <property name="transition.distort">0</property>
+      <property name="transition.rect">2426.12 813.474 1500 1500 1</property>
+      <property name="transition.valign">middle</property>
+      <property name="transition.halign">center</property>
+      <property name="shotcut:animIn">00:00:00.000</property>
+      <property name="shotcut:animOut">00:00:00.000</property>
+      <property name="transition.threads">0</property>
+    </filter>
+  </producer>
+  <playlist id="playlist2">
+    <property name="shotcut:video">1</property>
+    <property name="shotcut:name">V3</property>
+    <entry producer="producer3" in="00:00:00.000" out="00:00:03.960"/>
+  </playlist>
+  <tractor id="tractor1" title="Shotcut version 23.11.29" in="00:00:00.000" out="01:09:27.360">
+    <property name="shotcut">1</property>
+    <property name="shotcut:projectAudioChannels">2</property>
+    <property name="shotcut:projectFolder">0</property>
+    <property name="shotcut:projectNote">1:00 censor api key  </property>
+    <properties name="shotcut:markers">
+      <properties name="0">
+        <property name="text">no need to censor dead key</property>
+        <property name="start">00:07:00.280</property>
+        <property name="end">00:07:09.680</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="1">
+        <property name="text">PR culture</property>
+        <property name="start">00:18:19.800</property>
+        <property name="end">00:18:19.800</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="2">
+        <property name="text">API CLI compat</property>
+        <property name="start">00:19:10.000</property>
+        <property name="end">00:19:10.000</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="3">
+        <property name="text">ask for upload</property>
+        <property name="start">00:22:23.080</property>
+        <property name="end">00:22:23.080</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="4">
+        <property name="text">using dandi instances (prod &amp; staging)</property>
+        <property name="start">00:22:57.800</property>
+        <property name="end">00:22:57.800</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="5">
+        <property name="text">datacite for DOIs</property>
+        <property name="start">00:32:10.760</property>
+        <property name="end">00:32:10.760</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="6">
+        <property name="text">dandi-schema</property>
+        <property name="start">00:40:32.520</property>
+        <property name="end">00:40:32.520</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="7">
+        <property name="text">docs &amp; upload walkthrough</property>
+        <property name="start">00:43:37.000</property>
+        <property name="end">00:43:37.000</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="8">
+        <property name="text">validation</property>
+        <property name="start">00:49:20.800</property>
+        <property name="end">00:49:20.800</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="9">
+        <property name="text">download</property>
+        <property name="start">00:53:49.880</property>
+        <property name="end">00:53:49.880</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="10">
+        <property name="text">populate </property>
+        <property name="start">00:55:09.640</property>
+        <property name="end">00:55:09.640</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="11">
+        <property name="text">validate</property>
+        <property name="start">00:56:56.520</property>
+        <property name="end">00:56:56.520</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="12">
+        <property name="text">dandi upload</property>
+        <property name="start">00:57:21.280</property>
+        <property name="end">00:57:21.280</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="13">
+        <property name="text">Followup</property>
+        <property name="start">00:59:38.000</property>
+        <property name="end">00:59:38.000</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="14">
+        <property name="text">managing API keys</property>
+        <property name="start">01:01:27.280</property>
+        <property name="end">01:01:27.280</property>
+        <property name="color">#FF0000</property>
+      </properties>
+      <properties name="15">
+        <property name="text">Why DANDI?</property>
+        <property name="start">01:04:24.520</property>
+        <property name="end">01:04:24.520</property>
+        <property name="color">#FF0000</property>
+      </properties>
+    </properties>
+    <property name="shotcut:scaleFactor">0.185616</property>
+    <property name="shotcut:skipConvert">0</property>
+    <track producer="background"/>
+    <track producer="playlist0"/>
+    <track producer="playlist1"/>
+    <track producer="playlist2"/>
+    <transition id="transition2">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition3">
+      <property name="a_track">0</property>
+      <property name="b_track">1</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">1</property>
+    </transition>
+    <transition id="transition4">
+      <property name="a_track">0</property>
+      <property name="b_track">2</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition5">
+      <property name="a_track">1</property>
+      <property name="b_track">2</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+    <transition id="transition6">
+      <property name="a_track">0</property>
+      <property name="b_track">3</property>
+      <property name="mlt_service">mix</property>
+      <property name="always_active">1</property>
+      <property name="sum">1</property>
+    </transition>
+    <transition id="transition7">
+      <property name="a_track">1</property>
+      <property name="b_track">3</property>
+      <property name="version">0.1</property>
+      <property name="mlt_service">frei0r.cairoblend</property>
+      <property name="threads">0</property>
+      <property name="disable">0</property>
+    </transition>
+  </tractor>
+</mlt>
