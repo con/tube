@@ -46,10 +46,6 @@ if [ -n "$exiftool_fields" ]; then
 	tools="exiftool $tools"
 	exiftool_want="^($(echo "$exiftool_fields" | sed -e 's/ /|/g' -e 's/_/ /g'))"
 fi
-if [ -z "$tools" ]; then
-	exit 0
-fi
-
 case "$(git config --bool metadata.overwrite || :)" in
 	true)
 		equal="="
@@ -81,6 +77,10 @@ process() {
         # and add also distribution-restriction
         addmeta "$f" "distribution-restrictions" "uncurated"
     else
+        return
+    fi
+    # if nothing was asked to extract with exiftools -- nothing more todo
+    if [ -z "$tools" ]; then
         return
     fi
 	if [ -e "$f" ]; then
