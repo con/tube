@@ -76,6 +76,13 @@ addmeta() {
 }
 
 process() {
+    # add only under sourcedata/
+    if echo "$f" | grep sourcedata/; then
+        # and add also distribution-restriction
+        addmeta "$f" "distribution-restrictions" "uncurated"
+    else
+        return
+    fi
 	if [ -e "$f" ]; then
 		echo "adding metadata for $f"
 		for tool in $tools; do
